@@ -1,13 +1,14 @@
 package il.ac.huji.tipcalculator;
 
-import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.TextView;
 
-public class TipCalculatorActivity extends Activity {
+public class TipCalculatorActivity extends AppCompatActivity {
 
     private static TextView amount;
     private static TextView result;
@@ -32,7 +33,7 @@ public class TipCalculatorActivity extends Activity {
                     double tip = doubleAmount * 0.12;
                     String res = String.format(getString(R.string.resultDouble), tip);
                     if(round.isChecked()){
-                        res = String.format(getString(R.string.resultInt), (int) Math.round(tip));
+                        res = String.format(getString(R.string.resultInt), (int) Math.ceil(tip));
                     }
                     result.setText(res);
                 } catch (NumberFormatException e) {

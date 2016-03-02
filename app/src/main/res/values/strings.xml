@@ -6,8 +6,8 @@
     <string name="calculate">Calculate</string>
     <string name="tip">Tip: </string>
     <string name="action_settings">Settings</string>
-    <string name="resultDouble">%1$.3f$</string>
+    <string name="resultDouble">%1$.2f$</string>
     <string name="resultInt">%1$d$</string>
     <string name="not_number">Bill amount has to be a number</string>
-    <string name="negative_amount">Bill amount has to be positive</string>
+    <string name="negative_amount">Bill amount must be positive</string>
 </resources>
